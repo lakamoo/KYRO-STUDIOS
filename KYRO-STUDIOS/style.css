@@ -1,0 +1,155 @@
+/* Reset and Base Styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+	background-color: #0b0f19;
+	color: #f3f4f6;
+	line-height: 1.6;
+}
+
+/* Header & Nav */
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 5%;
+	background-color: rgba(11, 15, 25, 0.8);
+	position: sticky;
+	top: 0;
+	backdrop-filter: blur(10px);
+	z-index: 100;
+}
+
+.logo {
+	font-size: 1.5rem;
+	font-weight: 800;
+	letter-spacing: 2px;
+	color: #38bdf8; /* Sleek sky blue */
+}
+
+nav a {
+	color: #9ca3af;
+	text-decoration: none;
+	margin-left: 2rem;
+	font-weight: 500;
+	transition: color 0.3s;
+}
+
+nav a:hover {
+	color: #38bdf8;
+}
+
+.btn-nav {
+	background-color: #38bdf8;
+	color: #0b0f19;
+	padding: 0.5rem 1.2rem;
+	border-radius: 6px;
+	font-weight: 600;
+}
+
+.btn-nav:hover {
+	background-color: #0ea5e9;
+	color: #fff;
+}
+
+/* Hero Section */
+.hero {
+	min-height: 80vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 0 1rem;
+	background: radial-gradient(circle at center, #1e293b 0%, #0b0f19 70%);
+}
+
+.hero-content h1 {
+	font-size: 3.5rem;
+	font-weight: 800;
+	margin-bottom: 1.5rem;
+	line-height: 1.2;
+	background: linear-gradient(to right, #fff, #38bdf8);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.hero-content p {
+	font-size: 1.25rem;
+	color: #9ca3af;
+	max-width: 600px;
+	margin: 0 auto 2.5rem auto;
+}
+
+.btn-primary {
+	display: inline-block;
+	background-color: #38bdf8;
+	color: #0b0f19;
+	padding: 0.8rem 2rem;
+	border-radius: 8px;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 1.1rem;
+	transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-primary:hover {
+	background-color: #0ea5e9;
+	transform: translateY(-2px);
+}
+
+/* Sections General */
+section {
+	padding: 6rem 10%;
+	text-align: center;
+}
+
+.about {
+	background-color: #111827;
+}
+
+.about h2, .contact h2 {
+	font-size: 2.2rem;
+	margin-bottom: 1.5rem;
+	color: #fff;
+}
+
+.about p {
+	font-size: 1.15rem;
+	color: #9ca3af;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+/* Contact Section */
+.contact p {
+	color: #9ca3af;
+	margin-bottom: 2rem;
+}
+
+.btn-secondary {
+	font-size: 1.5rem;
+	color: #38bdf8;
+	text-decoration: none;
+	font-weight: 700;
+	border-bottom: 2px solid transparent;
+	transition: border-color 0.3s;
+}
+
+.btn-secondary:hover {
+	border-color: #38bdf8;
+}
+
+/* Footer */
+footer {
+	text-align: center;
+	padding: 3rem;
+	font-size: 0.9rem;
+	color: #4b5563;
+	border-top: 1px solid #1f2937;
+}
+
